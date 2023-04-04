@@ -1,0 +1,279 @@
+/*  ---- CSS VARIABLES ----  */
+:root {
+    /* backgrounds */
+    --bg-teal-light-opacity: rgba(138,207,189,0.1);
+    --bg-teal-light: #8ACFBD;
+    --bg-teal-dark: #2CA399;
+    --bg-grey-dark: #606161;
+    --bg-orange: #E98624;
+    --bg-salmon: #E5553F;
+
+    /* to use this: background-color: var(--bg-orange); */
+
+    /* font/vector colors */
+    --white: #FFF;
+    --black: #000;
+    --grey-dark: #606161;
+}
+  
+
+
+/*  ---- BASIC CORE STYLES ----  */
+/* meyer reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  -webkit-text-size-adjust: 100%;
+}
+/* fix the box model/other resets */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  word-break: break-word;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  border-style: none;
+}
+/*  accessibility */
+[aria-busy="true"] {
+        cursor: progress;
+}
+
+[aria-controls] {
+cursor: pointer;
+}
+
+[aria-disabled="true"],
+[disabled] {
+    cursor: not-allowed;
+}
+
+[aria-hidden="false"][hidden] {
+    display: initial;
+}
+
+[aria-hidden="false"][hidden]:not(:focus) {
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}
+a,
+area,
+button,
+input,
+label,
+[tabindex] {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+[hidden] {
+  display: none;
+}
+/* Chrome, Edge, and Safari. */
+ [type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */
+}
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54;
+}
+::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+  
+/* iOS and Safari. */
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    height: auto;
+}
+  
+/* Firefox */
+::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+:-moz-focusring {
+    outline: 1px dotted red;
+}
+:-moz-ui-invalid {
+    box-shadow: none;
+}
+
+/* start generic core styles */
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 67.5%;
+    line-height: 1.6em;
+    background: white;
+    color: var(--black);;
+
+    margin: auto;
+    padding: 0px;
+}
+
+.sr-only,
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.h1,
+.layer--wysiwyg h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 600%;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+/* these particular headings have combined styles for landing page site only, 
+use the typographic scale in figma for the real site */
+.h2, .h3, .h4,
+.layer--wysiwyg h2, .layer--wysiwyg h3, .layer--wysiwyg h4{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 540%;
+    line-height: 125%;
+}
+
+.h5, .h6
+.layer--wysiwyg h5, .layer--wysiwyg h6{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 240%;
+    line-height: 150%;
+}
+
+.p,
+.layer--wysiwyg p{
+    font-size: 200%;
+    line-height: 150%;
+}
+
+a, a:visited{
+
+}
+a:hover{
+
+}
+
+
+
+/*  ---- CUSTOM STYLES  ---- */
+/* global styles, meant to be shared */
+/* lots of similar bits, so made it not take a million lines of code */
+.bg--teal-dark{             background-color: var(--bg-teal-dark);             color: var(--white); }
+.bg--teal-light{            background-color: var(--bg-teal-light);            color: var(--black); }
+.bg--teal-light-opacity{    background-color: var(--bg-teal-light-opacity);    color: var(--black); }
+.bg--grey-dark{             background-color: var(--bg-grey-dark);             color: var(--white); }
+.bg--orange{                background-color: var(--bg-orange);                 color: var(--black); }
+.bg--salmon{                background-color: var(--bg-salmon);                 color: var(--white); }
+
+.layer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.button{
+    font-size: inherit;
+    font-weight: 400;
+    background-color: var(--bg-teal-light);
+    clip-path: polygon(100% 0%,85% 50%,100% 100%,0% 100%, 0% 0%);
+    padding: 12px 10px;
+    padding-left: 15px;
+    padding-right: 40px;
+    transition: all .5s cubic-bezier(.11,.66,.55,.99);
+}
+.button:hover{
+    font-weight: 600;
+    background-color: var(--bg-orange);
+}
+span.dot{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: -10px;
+    border-radius: 100%;
+    border: 3px solid var(--white);
+}
+
+
+
+/* specific styles, meant to overwrite generic styles or create totally new ones */
+.button--large{
+    padding: 20px 18px;
+}
+
+.header--wrapper{
+    display: flex;
+    column-gap: 80px;
+}
+.header--wrapper--logos{
+    column-gap: 40px;
+    align-items: center; 
+}
+.logo{
+    max-width: 200px;
+    height: auto;
+    margin-left: -48px;
+}
+
+.layer--wysiwyg{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+
+
+
+
+/*  ---- RESPONSIVE  ---- */
+@media (max-width: 600px) {
+
+}
