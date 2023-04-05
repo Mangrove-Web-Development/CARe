@@ -178,6 +178,7 @@ use the typographic scale in figma for the real site */
     font-size: 540%;
     line-height: 125%;
     color: var(--grey-dark);
+    margin-bottom: 0px;
 }
 
 .h5, .h6
@@ -186,12 +187,14 @@ use the typographic scale in figma for the real site */
     font-weight: 400;
     font-size: 240%;
     line-height: 150%;
+    margin-bottom: 0px;
 }
 
 .p,
 .layer--wysiwyg p{
     font-size: 200%;
     line-height: 150%;
+    margin-bottom: 0px;
 }
 
 a, a:visited{
@@ -292,6 +295,9 @@ span.dot{
     color: var(--white);
 }
 
+footer{
+    padding-bottom: 80px;
+}
 .footer--wrapper{
     margin-bottom: 40px;
 }
