@@ -222,6 +222,8 @@ a:hover{
 .button{
     font-size: inherit;
     font-weight: 400;
+    color: var(--black) !important;
+    text-decoration: none;
     background-color: var(--bg-teal-light);
     clip-path: polygon(100% 0%,85% 50%,100% 100%,0% 100%, 0% 0%);
     padding: 12px 10px;
@@ -270,7 +272,13 @@ span.dot{
     padding-right: 10%;
 }
 
-
+.layer--CTA--wrapper{
+  align-items: center;
+}
+.layer--CTA--wrapper h2{
+    min-width: 50%;
+    padding-left: 80px;
+}
 
 
 
