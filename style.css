@@ -295,7 +295,7 @@ span.dot{
     color: var(--white);
 }
 
-footer{
+.layer--footer{
     padding-bottom: 80px;
 }
 .footer--wrapper{
