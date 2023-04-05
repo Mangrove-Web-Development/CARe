@@ -145,7 +145,7 @@ body {
     font-size: 67.5%;
     line-height: 1.6em;
     background: white;
-    color: var(--black);;
+    color: var(--black);
 
     margin: auto;
     padding: 0px;
@@ -177,6 +177,7 @@ use the typographic scale in figma for the real site */
     font-weight: 700;
     font-size: 540%;
     line-height: 125%;
+    color: var(--grey-dark);
 }
 
 .h5, .h6
@@ -249,6 +250,7 @@ span.dot{
 /* specific styles, meant to overwrite generic styles or create totally new ones */
 .button--large{
     padding: 20px 18px;
+    padding-right: 80px;
 }
 
 .header--wrapper,
