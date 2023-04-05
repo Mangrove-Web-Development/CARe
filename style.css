@@ -249,7 +249,9 @@ span.dot{
     padding: 20px 18px;
 }
 
-.header--wrapper{
+.header--wrapper,
+.footer--wrapper,
+.layer--CTA--wrapper{
     display: flex;
     column-gap: 80px;
 }
