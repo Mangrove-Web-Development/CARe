@@ -274,12 +274,17 @@ span.dot{
     padding-right: 10%;
 }
 
+.layer--CTA{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 .layer--CTA--wrapper{
   align-items: center;
 }
 .layer--CTA--wrapper h2{
     min-width: 50%;
     padding-left: 80px;
+    color: var(--white);
 }
 
 
