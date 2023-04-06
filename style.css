@@ -248,8 +248,9 @@ a:hover{
 }
 span.dot{
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    position: static;  /* prevent the dot from moving to a new line before text does */
+    width: 15px;
+    height: 15px;
     margin-left: -10px;
     border-radius: 100%;
     border: 3px solid var(--white);
