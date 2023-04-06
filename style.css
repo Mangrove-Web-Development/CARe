@@ -142,7 +142,9 @@ body {
     font-weight: 400;
     font-style: normal;
 
-    font-size: 67.5%;
+    /* used to be 67.5%, but was asked to reduce all sizes for the site. */
+    /* individual font size code still matches the numbers in the design. */
+    font-size: 57.5%;
     line-height: 1.6em;
     background: white;
     color: var(--black);
@@ -283,8 +285,8 @@ span.dot{
 }
 
 .layer--CTA{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .layer--CTA--wrapper{
   align-items: center;
@@ -292,6 +294,7 @@ span.dot{
 .layer--CTA--wrapper h2{
     min-width: 50%;
     padding-left: 80px;
+    margin-top: 0px;
     color: var(--white);
 }
 
