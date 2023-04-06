@@ -270,6 +270,9 @@ span.dot{
     display: flex;
     column-gap: 80px;
 }
+.layer--header{
+    padding-top: 40px;
+}
 .header--wrapper--logos{
     column-gap: 40px;
     align-items: center; 
