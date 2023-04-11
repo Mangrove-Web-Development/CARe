@@ -313,6 +313,33 @@ span.dot{
 
 
 /*  ---- RESPONSIVE  ---- */
+@media (max-width: 1100px) {
+    /*  - GENERIC STYLES -  */
+    .header--wrapper,
+    .footer--wrapper,
+    .layer--CTA--wrapper{
+        display: block;
+    }
+    .header--wrapper--logos{
+        display: flex;
+    }
+
+    .h1,
+    .layer--wysiwyg h1{
+        font-size: 550%;
+    }
+    .h2, .h3, .h4,
+    .layer--wysiwyg h2, .layer--wysiwyg h3, .layer--wysiwyg h4{
+        font-size: 450%;
+    }
+
+
+
+    /*  - SPECIFIC STYLES -  */
+    .layer--CTA--wrapper h2{
+        padding-left: 0px;
+    }
+}
 @media (max-width: 600px) {
 
 }
