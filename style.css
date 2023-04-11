@@ -333,6 +333,13 @@ span.dot{
         font-size: 450%;
     }
 
+    span.dot{
+        width: 10px;
+        height: 10px;
+        margin-left: -5px;
+        border: 2px solid var(--white);
+    }
+
 
 
     /*  - SPECIFIC STYLES -  */
@@ -340,6 +347,25 @@ span.dot{
         padding-left: 0px;
     }
 }
-@media (max-width: 600px) {
 
+@media (max-width: 800px) {
+    .h1,
+    .layer--wysiwyg h1{
+        font-size: 400%;
+    }
+    .comfortaa{
+        font-size: 260%;
+    }
+    .logo{
+        max-width: 150px;
+        margin-left: -35px;
+    }
+    .h2, .h3, .h4,
+    .layer--wysiwyg h2, .layer--wysiwyg h3, .layer--wysiwyg h4{
+        font-size: 350%;
+    }
+    .p,
+    .layer--wysiwyg p{
+        font-size: 180%;
+    }
 }
