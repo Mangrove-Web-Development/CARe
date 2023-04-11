@@ -369,3 +369,24 @@ span.dot{
         font-size: 180%;
     }
 }
+
+@media (max-width: 500px) {
+    .h1,
+    .layer--wysiwyg h1{
+        font-size: 370%;
+    }
+    .comfortaa{
+        font-size: 220%;
+    }
+    .h2, .h3, .h4,
+    .layer--wysiwyg h2, .layer--wysiwyg h3, .layer--wysiwyg h4{
+        font-size: 300%;
+    }
+
+    .button--large{
+        padding: 12px 10px;
+        padding-left: 15px;
+        padding-right: 50px;
+        font-size: 80%;
+    }
+}
