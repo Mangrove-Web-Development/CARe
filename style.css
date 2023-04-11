@@ -339,12 +339,18 @@ span.dot{
         margin-left: -5px;
         border: 2px solid var(--white);
     }
+    .logo{
+        max-width: 150px;
+        margin-left: -35px;
+        margin-right: -35px;
+    }
 
 
 
     /*  - SPECIFIC STYLES -  */
     .layer--CTA--wrapper h2{
         padding-left: 0px;
+        padding-bottom: 20px;
     }
 }
 
@@ -355,10 +361,6 @@ span.dot{
     }
     .comfortaa{
         font-size: 260%;
-    }
-    .logo{
-        max-width: 150px;
-        margin-left: -35px;
     }
     .h2, .h3, .h4,
     .layer--wysiwyg h2, .layer--wysiwyg h3, .layer--wysiwyg h4{
