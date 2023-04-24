@@ -56,8 +56,12 @@
                     Renforcer la capacité de recherche pour combler l’evidence sur la maltraitance des enfants et le bien-être des enfants
                 <span class="dot"></span></p>
             </div>
-            <!-- this photo is temp, may be the wrong photo. hardcode styles until we know -->
-            <img src="./assets/istockphoto-1406743750-1024x1024.jpg" class="header--image" alt=" " style="mix-blend-mode: multiply; margin-bottom: -200px; margin-top: -50px; width: 100%;">
+            <!-- image is bought, but no time for the responsive sourceset -->
+            <picture>
+                <source media="(min-width:600px)" srcset="./assets/hands-image/hands-2500px.jpg">
+                <source media="(min-width:1500px)" srcset="./assets/hands-image/hands-1500px.jpg">
+                <img src="./assets/hands-image/hands-600px.jpg" class="header--image" alt=" " style="mix-blend-mode: multiply; margin-bottom: -200px; margin-top: -50px; width: 100%;">
+            </picture> 
         </header>
 
         <section class="layer layer--wysiwyg">
